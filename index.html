@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/slowHover.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('.test1').slowHover('img/birdNew-color.png');
+		$('.test2').slowHover('img/birdNew.png');
+	});
+	</script>
+	<style>
+	.group:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	div {
+		width: 360px;
+		height: 616px;
+		float: left;
+	}
+	</style>
+</head>
+<body>
+	<div class="group">
+		<img class="test1" src="img/birdNew.png" alt="">
+	</div>
+	<div class="group">
+		<img class="test2" src="img/birdNew-color.png" alt="">
+	</div>
+</body>
+</html>
